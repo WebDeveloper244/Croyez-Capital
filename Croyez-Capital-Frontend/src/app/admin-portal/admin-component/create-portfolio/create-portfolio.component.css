@@ -1,0 +1,27 @@
+.mainWrapper{
+    height: 110vh;
+    border: 1px solid rgb(243, 243, 243);
+    box-shadow: 2px 2px 20px 2px rgb(211, 211, 211);
+    border-radius: 20px;
+    background-color: var(--white-color);
+}
+input{
+    border-radius: 0%;
+}
+input:hover{
+    border-color: rgb(0, 204, 255);
+}
+input:focus{
+    box-shadow: none;
+    border-color: rgb(0, 204, 255);
+}
+@media(max-width:1199px){
+    .mainWrapper{
+        height: 130vh;
+    }
+}
+@media(max-width:991px){
+    .mainWrapper{
+        height: 130vh;
+    }
+}
