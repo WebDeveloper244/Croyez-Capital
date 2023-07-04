@@ -1,1 +1,38 @@
-<p>portfolio-details works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="main">
+                <div class="image-container">
+                    <img [src]="Url+getIdData?.imageDetails?.imageUrl" alt="" srcset="" style="height: 39vh; width: 100%;">
+
+                </div>
+                <div class="content">
+                    <p class="text-secondary">{{getIdData?.addYear}}</p>
+                </div>
+                <div class="heading">
+                    <h1>
+                        {{getIdData?.titleName}}
+                    </h1>
+                </div>
+                <div class="content">
+                    <p>
+                        {{getIdData?.description}}
+                    </p>
+                    <p>
+                        <a
+                            [href]="getIdData?.website"
+                            ><button class="button-12"
+                                role="button">Website</button></a>
+                        <a
+                        [href]="getIdData?.linkedIn"
+                            target="_blank"><button class="button-12"
+                                role="button">LinkedIn</button></a>
+                        <a [href]="getIdData?.twitter" target="_blank"><button
+                                class="button-12" role="button">Twitter</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

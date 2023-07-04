@@ -1,0 +1,116 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="mainWrapper p-5">
+                <form (ngSubmit)="submitPortfolioForm()"
+                    [formGroup]="portfolioForm">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input type="text" class="form-control"
+                            formControlName="titleName">
+                    </div>
+                    <!-- validation -->
+                    <div class="error  text-danger"
+                        *ngIf="portfolioForm.controls['titleName'].invalid && (portfolioForm.controls['titleName'].dirty || portfolioForm.controls['titleName'].touched)">
+                        <span
+                            *ngIf="(portfolioForm.controls['titleName'].errors.pattern)">
+                            Only Alphabets allowed</span>
+                        <span
+                            *ngIf="portfolioForm.controls['titleName'].errors.required">
+                            <small>Field Required!</small>
+                        </span>
+                    </div>
+                    <!-- validation -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Short-Description</label>
+                        <input type="text" class="form-control"
+                            formControlName="shortDescription">
+                    </div>
+                    <!-- validation -->
+                    <div class="error  text-danger"
+                        *ngIf="portfolioForm.controls['shortDescription'].invalid && (portfolioForm.controls['shortDescription'].dirty || portfolioForm.controls['shortDescription'].touched)">
+                        <span
+                            *ngIf="(portfolioForm.controls['shortDescription'].errors.pattern)">
+                            Only Alphabets allowed</span>
+                        <span
+                            *ngIf="portfolioForm.controls['shortDescription'].errors.required">
+                            <small>Field Required!</small>
+                        </span>
+                    </div>
+                    <!-- validation -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Select-Image</label>
+                        <input type="file" class="form-control"
+                            formControlName="image" (change)="getImage($event)">
+                    </div>
+                    <!-- validation -->
+                    <div class="error  text-danger"
+                    *ngIf="portfolioForm.controls['image'].invalid && (portfolioForm.controls['image'].dirty || portfolioForm.controls['image'].touched)">
+                    <span *ngIf="portfolioForm.controls['image'].errors.required">
+                      <small>Field Required!</small>
+                    </span>
+                  </div>
+                    <!-- validation -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Year</label>
+                        <input type="text" class="form-control"
+                            formControlName="addYear">
+                    </div>
+                    <!-- validation -->
+                    <div class="error  text-danger"
+                        *ngIf="portfolioForm.controls['addYear'].invalid && (portfolioForm.controls['addYear'].dirty || portfolioForm.controls['addYear'].touched)">
+                        <span
+                            *ngIf="portfolioForm.controls['addYear'].errors.required">
+                            <small>Field Required!</small>
+                        </span>
+                        <span
+                            *ngIf="(portfolioForm.controls['addYear'].errors.pattern)">
+                            only numbers allowed</span>
+                    </div>
+                    <!-- validation -->
+
+                    <!-- link-input -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Web-Url</label>
+                        <input type="text" class="form-control"
+                            formControlName="website">
+                    </div>
+                    <!-- link-input -->
+
+                    <!-- link-input -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Twitter-Url</label>
+                        <input type="text" class="form-control"
+                            formControlName="twitter">
+                    </div>
+                    <!-- link-input -->
+
+                    <!-- link-input -->
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">LinkeIn-Url</label>
+                        <input type="text" class="form-control"
+                            formControlName="linkedIn">
+                    </div>
+                    <!-- link-input -->
+                    
+
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <textarea name id cols="30" rows="10" class="w-100"
+                            formControlName="description"></textarea>
+                    </div>
+                    <!-- validation -->
+                    <div class="error  text-danger"
+                    *ngIf="portfolioForm.controls['description'].invalid && (portfolioForm.controls['description'].dirty || portfolioForm.controls['description'].touched)">
+                    <span *ngIf="portfolioForm.controls['description'].errors.required">
+                      <small>Field Required!</small>
+                    </span>
+                  </div>
+                    <!-- validation -->
+                    <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

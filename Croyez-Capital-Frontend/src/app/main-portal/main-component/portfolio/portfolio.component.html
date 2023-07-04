@@ -1,1 +1,22 @@
-<p>portfolio works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" *ngFor="let item of getAllportfolioData">
+            <div class="mainWrapper" (click)="redirectToDetailPage(item._id)" role="button">
+                    <div class="image">
+                        <img [src]="Url+item.imageDetails.imageUrl" alt="" srcset="" style="
+                        height: 21vh;
+                        width: 100%;">
+                    </div>
+                <div class="content">
+                    <h1>
+                       {{item.titleName}}
+                    </h1>
+                    <p>
+                        {{item.shortDescription}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

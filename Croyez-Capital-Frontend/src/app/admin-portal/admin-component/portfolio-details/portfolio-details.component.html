@@ -1,0 +1,87 @@
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="mainWrapper px-5">
+          <div class="wrapper">
+            <div class="table-responsive">
+              <table class="table border">
+                <thead class="border-dark tableHead text-center text-white">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Images</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Short-Tittle</th>
+                    <th scope="col">View</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let item of getAllPortFolioData; let i=index"
+                  class="text-center">
+                  <tr>
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{item.titleName}}</td>
+                    <td><img [src]="Url+item.imageDetails.imageUrl" alt srcset
+                        height="40px" width="40px"></td>
+                    <td>{{item.addYear}}</td>
+                    <td>{{item.shortDescription}}</td>
+                    <td>
+                      <i class="fa-sharp fa-solid fa-eye" style="cursor: pointer;"
+                        mat-button
+                        (click)="getPortFolioDataById(item._id)"></i>
+                    </td>
+                    <td>
+                      <button type="button"
+                        class="btn btn-outline-primary me-2 mt-2"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                        (click)="showDialog();getPortFolioDataById(item._id)">Up-Date</button>
+                      <button type="button"
+                        class="btn btn-outline-danger me-2 mt-2"
+                        (click)="deletePortFolioData(item._id)">Pemanent-Delete</button>
+                    </td>
+  
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PrimeNG Modal -->
+  <div class="card flex justify-content-center">
+    <p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '30vw' }" [draggable]="true" [resizable]="false">
+      <form (ngSubmit)="updatePortfolioForm()"
+      [formGroup]="portfolioForm">
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control"
+              formControlName="titleName">
+      </div>
+  
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Short-Description</label>
+          <input type="text" class="form-control"
+              formControlName="shortDescription">
+      </div>
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Year</label>
+          <input type="text" class="form-control"
+              formControlName="addYear">
+      </div>
+   
+      <div class="mb-3">
+          <label>Description</label>
+          <textarea name id cols="30" rows="10" class="w-100"
+              formControlName="description"></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+  </form>
+  
+    </p-dialog>
+  </div>
+  <!-- PrimeNG Modal -->
+  
