@@ -20,7 +20,7 @@
     color: transparent;
 }
 
-* rotate bell icon on hover */ .bell-icon {
+rotate bell icon on hover .bell-icon {
     /* Set the initial position of the bell icon */
     display: inline-block;
     transform-origin: center;
