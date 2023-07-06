@@ -105,7 +105,6 @@ const updatePortFolioDataById = async (req, res) => {
     try {
         const ID = req.body._id;
         const PayLoad = req.body;
-        console.log(PayLoad);
 
         const docToUpDate = await PortfolioModel.updateOne(
             { _id: ID },

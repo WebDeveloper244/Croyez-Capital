@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.text());
 app.use(express.raw());
 app.use(cors());
+app.use(express.static(path.join(__dirname,'/Front-End')));
 app.use('/assets',express.static('assets')); //Route in image path
 //Block End Intialize the app
 
@@ -40,7 +41,7 @@ const adminmanagementRouter = require ('./routes/adminManagementRouter');
 
 
 //*****UsingRoutes*****//
-app.use(express.static(path.join(__dirname,'/front-end')));
+
 // app.use('/assets',express.static('assets'));
 app.use('/ContactUsManagement',_ContactUsManagementRoutes)
 app.use('/portfolioManagement',portfolioManagementRoutes)
@@ -53,9 +54,8 @@ app.use('/adminmanagementRouter',adminmanagementRouter);
 
 //Serving Front End Form Your Server.js(Express)
 app.get('*',(req,res)=>{
-    res.sendFile(path.join(__dirname+'/front-end/index.html'));
+    res.sendFile(path.join(__dirname+'/Front-End/index.html'));
 });
-console.log(__dirname);
 //Serving Front End Form Your Server.js(Express)
 
 
