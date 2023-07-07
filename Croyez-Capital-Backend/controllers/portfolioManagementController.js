@@ -65,7 +65,7 @@ const getPortFolioDataById = async (req, res) => {
         const ID = req.params._id;
         const docToFind = await PortfolioModel.findOne({ _id: ID })
         res.json({
-            message: "Data Found",
+            message: "Data Fond",
             data: true,
             result: docToFind
         })
