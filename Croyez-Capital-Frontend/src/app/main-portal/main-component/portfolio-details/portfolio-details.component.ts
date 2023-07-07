@@ -10,7 +10,7 @@ import { PortfolioService } from 'src/app/shared-portal/portfolio/portfolio.serv
 export class PortfolioDetailsComponent implements OnInit{
   public getId :any
   public getIdData:object|any={};
-  public Url='http://localhost:8989/'
+  public Url='/'
   constructor(
     private activatedRoute: ActivatedRoute,
     private portfolioService:PortfolioService
