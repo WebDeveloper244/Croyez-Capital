@@ -1,6 +1,6 @@
 /* Google-Fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Serif:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Serif:wght@300;400;500&display=swap');
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
@@ -16,25 +16,36 @@
 }
 
 /* global-css */
+.main{
+  margin-top: 20%;
+}
+.container{
+  width: 30%;
+  margin-top: 3%;
+}
 
-h1{
+h1 {
   font-family: var(--roboto);
   font-weight: 400;
   font-size: 27px;
   line-height: 35px
 }
-p{
+
+p {
   font-family: var(--poppins);
   font-weight: 400;
   font-size: 15px;
   line-height: 24px
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 .cdk-overlay-container {
   z-index: 1090;
 }
+
 /* global-css */
 
 /* global-button */
@@ -52,14 +63,43 @@ a{
   font-size: 12px;
   line-height: 24px;
 }
+
 .button-12:hover {
   background-color: black;
   color: white;
 }
+
 .button-12 a:hover {
   color: var(--white-color);
 }
+
 /* global-button */
+
+/* global-Media-Quries */
+@media(max-width:1199px){
+  .container {
+      /* width: 50%; */
+      width:50%;
+  }
+}
+@media(max-width:991px){
+  .container {
+      /* width: 60%; */
+      width: 65%;
+  }
+}
+@media(max-width:767px){
+  .container {
+      width: 71%;
+      /* width: 70%; */
+  }
+}
+@media(max-width:576px){
+  .container {
+      width: 80%;
+  }
+}
+/* global-Media-Quries */
 
 
 /* global-validation */
@@ -69,40 +109,43 @@ input.ng-invalid.ng-touched {
 }
 
 textarea.ng-invalid.ng-touched {
-border: 2px solid red;
-animation: shake 300ms
+  border: 2px solid red;
+  animation: shake 300ms
 }
 
-input.ng-valid.ng-touched{
-border: 2px solid green;
+input.ng-valid.ng-touched {
+  border: 2px solid green;
 }
 
-textarea.ng-valid.ng-touched{
-border: 2px solid green;
+textarea.ng-valid.ng-touched {
+  border: 2px solid green;
 }
 
 select.ng-invalid.ng-touched {
-border: 2px solid red;
-animation: shake 300ms
+  border: 2px solid red;
+  animation: shake 300ms
 }
 
-select.ng-valid.ng-touched{
-border: 2px solid green;
+select.ng-valid.ng-touched {
+  border: 2px solid green;
 }
 
-*{
-font-family: 'Fira Sans', sans-serif;
+* {
+  font-family: 'Fira Sans', sans-serif;
 }
 
 @keyframes shake {
-25% {
+  25% {
     transform: translateX(4px)
-}
-50% {
+  }
+
+  50% {
     transform: translateX(-4px)
-}
-75% {
+  }
+
+  75% {
     transform: translateX(4px)
+  }
 }
-}
+
 /* global-validation */

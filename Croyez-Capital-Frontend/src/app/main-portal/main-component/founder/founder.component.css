@@ -1,6 +1,4 @@
-.container {
-    width: 50%;
-}
+
 
 .image-container {
     display: flex;
@@ -16,15 +14,15 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     text-align: center;
 
 }
 
-.main {
+/* .main {
     margin-top: 15%;
-}
+} */
 
 .heading {
     margin-bottom: 2.4rem;
@@ -38,7 +36,7 @@
 
 
 /* media-quries */
-@media(max-width:1199px) {
+/* @media(max-width:1199px) {
     .container {
         width: 50%;
     }
@@ -65,6 +63,6 @@
         width: 100%;
     
     }
-}
+} */
 
 /* media-quries */
