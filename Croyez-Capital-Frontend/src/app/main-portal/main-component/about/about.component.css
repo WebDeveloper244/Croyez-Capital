@@ -12,27 +12,27 @@
 
 
 /* media-quries */
-    @media(max-width:1199px){
-        .container {
-            /* width: 50%; */
-            width:50%;
-        }
+@media(max-width:1199px){
+    .container {
+        /* width: 50%; */
+        width:47%;
     }
-    @media(max-width:991px){
-        .container {
-            /* width: 60%; */
-            width: 65%;
-        }
+  }
+  @media(max-width:991px){
+    .container {
+        /* width: 60%; */
+        width: 48%;
     }
-    @media(max-width:767px){
-        .container {
-            width: 71%;
-            /* width: 70%; */
-        }
+  }
+  @media(max-width:767px){
+    .container {
+        width: 71%;
+        /* width: 70%; */
     }
-    @media(max-width:576px){
-        .container {
-            width: 80%;
-        }
+  }
+  @media(max-width:576px){
+    .container {
+        width: 80%;
     }
+  }
 /* media-quries */

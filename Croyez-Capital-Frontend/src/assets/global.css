@@ -25,8 +25,8 @@
 }
 
 h1 {
-  font-family: var(--roboto);
-  font-weight: 400;
+  font-family: var(--font-family);
+  font-weight: 500;
   font-size: 27px;
   line-height: 35px
 }
@@ -79,13 +79,13 @@ a {
 @media(max-width:1199px){
   .container {
       /* width: 50%; */
-      width:50%;
+      width:47%;
   }
 }
 @media(max-width:991px){
   .container {
       /* width: 60%; */
-      width: 65%;
+      width: 48%;
   }
 }
 @media(max-width:767px){

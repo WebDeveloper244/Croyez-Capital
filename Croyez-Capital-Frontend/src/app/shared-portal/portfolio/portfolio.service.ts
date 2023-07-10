@@ -10,18 +10,18 @@ export class PortfolioService {
   ) { }
 
   createPortfolio(PayLoad:any){
-    return this.HttpClient.post('/portfolioManagement/portfolioData', PayLoad);
+    return this.HttpClient.post('http://localhost:8989/portfolioManagement/portfolioData', PayLoad);
   }
   getPortfolio(){
-    return this.HttpClient.get('/portfolioManagement/getPortFolioData');
+    return this.HttpClient.get('http://localhost:8989/portfolioManagement/getPortFolioData');
   }
   getPortfolioById(_id:any){
-    return this.HttpClient.get(`/portfolioManagement/getPortFolioDataById/${_id}`);
+    return this.HttpClient.get(`http://localhost:8989/portfolioManagement/getPortFolioDataById/${_id}`);
   }
   updatePortfolio(payLoad:any){
-    return this.HttpClient.post('/portfolioManagement/updatePortFolioDataById', payLoad);
+    return this.HttpClient.post('http://localhost:8989/portfolioManagement/updatePortFolioDataById', payLoad);
   }
   deletePortfolio(_id:any){
-    return this.HttpClient.delete(`/portfolioManagement/deletePortFolioData/${_id}`);
+    return this.HttpClient.delete(`http://localhost:8989/portfolioManagement/deletePortFolioData/${_id}`);
   }
 }

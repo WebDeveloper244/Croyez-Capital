@@ -4,11 +4,15 @@
 }
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: -11px;
 }
-.content .active{
+.link{
+    border-right:1px solid var(--light-grey) ;
+}
+/* .content .active{
     color: var(--grey-color);
-}
+} */
 .content a{
     color: var(--light-grey);
     text-decoration: none;
@@ -17,10 +21,14 @@
     font-family: poppins;
     font-size: 12px;
     line-height: 17px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .content{
         flex-direction: column;
+    }
+    .link{
+        border-right:none ;
     }
 }

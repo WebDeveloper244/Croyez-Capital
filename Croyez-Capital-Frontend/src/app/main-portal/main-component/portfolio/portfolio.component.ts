@@ -10,7 +10,7 @@ import { PortfolioService } from 'src/app/shared-portal/portfolio/portfolio.serv
 export class PortfolioComponent {
 
   public getAllportfolioData:any=[];
-  public Url='/'
+  public Url='http://localhost:8989/'
 
   constructor(
     private readonly portfolioService:PortfolioService,
