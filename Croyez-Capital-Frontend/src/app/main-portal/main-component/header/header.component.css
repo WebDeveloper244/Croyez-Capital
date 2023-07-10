@@ -58,7 +58,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
-    font-family: poppins;
+    font-family: var(--roboto);
     font-size: 12px;
     line-height: 17px;
 
