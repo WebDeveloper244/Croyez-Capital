@@ -11,7 +11,7 @@ import { PortfolioService } from 'src/app/shared-portal/portfolio/portfolio.serv
 export class PortfolioDetailsComponent {
   public portfolioForm: any | FormGroup
   public getAllPortFolioData: any = [];
-  public Url = 'http://localhost:8989/'
+  public Url = '/'
   public visible: boolean = false;
   public makeMyIdPublic: any
   public getIdPortFolioData: any = []

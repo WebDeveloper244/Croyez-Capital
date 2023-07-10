@@ -10,7 +10,7 @@ export class LoginService {
   ) { }
 
   createLoginForm(payLoad: any) {
-    return this.HttpClient.post('http://localhost:8989/adminmanagementRouter/AdminLogin', payLoad);
+    return this.HttpClient.post('/adminmanagementRouter/AdminLogin', payLoad);
   }
   saveLoginTokenToLocalStorage(Payload: any) {
     return localStorage.setItem('Access-Token', Payload)
