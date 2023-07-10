@@ -8,6 +8,9 @@ import { OurMissionComponent } from './main-component/our-mission/our-mission.co
 import { PortfolioDetailsComponent } from './main-component/portfolio-details/portfolio-details.component';
 import { PortfolioComponent } from './main-component/portfolio/portfolio.component';
 import { WhyUsComponent } from './main-component/why-us/why-us.component';
+import { PrivacyPolicyComponent } from './main-component/privacy-policy/privacy-policy.component';
+import { ImportantDisclosureComponent } from './main-component/important-disclosure/important-disclosure.component';
+import { TermsOfUseComponent } from './main-component/terms-of-use/terms-of-use.component';
 
 const routes: Routes = [
   { 
@@ -35,6 +38,15 @@ const routes: Routes = [
       },
       {
         path: 'portfolioDetails/:Id', component: PortfolioDetailsComponent
+      },
+      {
+        path: 'privacyPolicy', component: PrivacyPolicyComponent
+      },
+      {
+        path: 'importantDisclosure', component: ImportantDisclosureComponent
+      },
+      {
+        path: 'termsOfUse', component: TermsOfUseComponent
       },
     ]} 
 ];

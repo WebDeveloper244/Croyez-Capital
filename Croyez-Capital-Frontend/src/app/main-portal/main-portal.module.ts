@@ -12,6 +12,9 @@ import { OurMissionComponent } from './main-component/our-mission/our-mission.co
 import { PortfolioComponent } from './main-component/portfolio/portfolio.component';
 import { PortfolioDetailsComponent } from './main-component/portfolio-details/portfolio-details.component';
 import { WhyUsComponent } from './main-component/why-us/why-us.component';
+import { PrivacyPolicyComponent } from './main-component/privacy-policy/privacy-policy.component';
+import { ImportantDisclosureComponent } from './main-component/important-disclosure/important-disclosure.component';
+import { TermsOfUseComponent } from './main-component/terms-of-use/terms-of-use.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { WhyUsComponent } from './main-component/why-us/why-us.component';
     OurMissionComponent,
     PortfolioComponent,
     PortfolioDetailsComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    PrivacyPolicyComponent,
+    ImportantDisclosureComponent,
+    TermsOfUseComponent
   ],
   imports: [
     CommonModule,

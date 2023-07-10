@@ -10,9 +10,9 @@
 .link{
     border-right:1px solid var(--light-grey) ;
 }
-/* .content .active{
+.content .active{
     color: var(--grey-color);
-} */
+}
 .content a{
     color: var(--light-grey);
     text-decoration: none;
