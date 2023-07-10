@@ -25,14 +25,12 @@ export class PortfolioDetailsComponent implements OnInit{
   }
   public callingMyActivatedRoute() {
     this.getId = this.activatedRoute.snapshot.paramMap.get('Id')
-    console.log(this.getId);
   }
 
   public getIdPortFolioData(){
 
     this.portfolioService.getPortfolioById(this.getId).subscribe(({result}:any)=>{
       this.getIdData = result
-      console.log(result);
     })
 
   }  

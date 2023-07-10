@@ -48,7 +48,6 @@ export class PortfolioDetailsComponent {
   getPortFolioData() {
     this.portFolioService.getPortfolio().subscribe((res: any) => {
       this.getAllPortFolioData = res.result
-      console.log(this.getAllPortFolioData);
     })
   }
 
@@ -57,7 +56,6 @@ export class PortfolioDetailsComponent {
     this.makeMyIdPublic = Id;
     this.portFolioService.getPortfolioById(Id).subscribe(({result}: any) => {
       this.getIdPortFolioData = result;
-      console.log(this.getIdPortFolioData);
 
       this.portfolioForm = this.formBuilder.group({
         titleName: new FormControl(this.getIdPortFolioData?.titleName),

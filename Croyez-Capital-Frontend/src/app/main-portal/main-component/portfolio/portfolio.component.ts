@@ -22,7 +22,6 @@ export class PortfolioComponent {
   allPortFolioData(){
     this.portfolioService.getPortfolio().subscribe(({result}:any)=>{
       this.getAllportfolioData = result
-      console.log(this.getAllportfolioData);
     })
   }
 

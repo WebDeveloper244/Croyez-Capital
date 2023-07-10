@@ -31,7 +31,6 @@ export class SignInComponent {
 
   SubmitLoginForm(){
     const value = this.LoginForm.value
-    console.log(value);
     this.loginService.createLoginForm(value).subscribe(({token,data,message}:any)=>{
       this.taoster[data ? 'success' : 'error'](message);
        this.loginService.saveLoginTokenToLocalStorage(token);
