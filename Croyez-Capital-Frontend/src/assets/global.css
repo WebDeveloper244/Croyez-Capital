@@ -7,12 +7,23 @@
 /* Google-Fonts */
 
 :root {
-  --font-family: 'Poppins', 'sans-serif';
+  /* --font-family: 'Whyte-Bold', 'sans-serif'; */
   --roboto: 'Roboto Mono', monospace;
   --white-color: #ffffff;
   --black-color: #000000;
   --grey-color: #19232d;
-  --light-grey: #828c96;
+  --simple-grey: #828c96;
+  --light-grey: #dce6f0;
+}
+@font-face {
+  font-family: 'Whyte';
+  src: url('../assets/font/Whyte-Regular.ttf') format('truetype');src: local('Whyte Light Italic'), local('Whyte-LightItalic'),
+  url('../assets/font/Whyte-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../assets/font/Whyte-LightItalic.woff2') format('woff2'),
+  url('../assets/font/Whyte-LightItalic.woff') format('woff'),
+  url('../assets/font/Whyte-LightItalic.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
 }
 
 /* global-css */
@@ -25,14 +36,14 @@
 }
 
 h1 {
-  font-family: var(--font-family);
-  font-weight: 500;
+  font-family: 'Whyte-Bold';
+  font-weight: 400;
   font-size: 27px;
   line-height: 35px
 }
 
 p {
-  font-family: var(--poppins);
+  font-family: 'Whyte-Bold';
   font-weight: 400;
   font-size: 15px;
   line-height: 24px

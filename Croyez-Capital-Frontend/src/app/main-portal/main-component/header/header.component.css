@@ -54,7 +54,7 @@
 }
 
 .navbar a {
-    color: var(--light-grey);
+    color: var(--simple-grey);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
